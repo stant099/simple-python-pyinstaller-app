@@ -14,7 +14,7 @@ if argnumbers == 2 :
     print("")
     sys.exit(0)
 
-if argnumbers != 2 :
+if aregnumbers != 2 :
     print("")
     print("You entered " + str(argnumbers) + " value/s.")
     print("")
