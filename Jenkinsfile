@@ -41,5 +41,12 @@ pipeline {
                 }
             }
         }
+        post {
+            success {
+                slackSend channel: '#builds',
+                    color: 'good',
+                    message: "The pipeline ${currentBuild.fullDisplayName} completed successfully."
+    }
+}
     }
 }
